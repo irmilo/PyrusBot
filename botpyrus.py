@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route('/<task_id>/<count>', methods=['GET', 'POST'])
 def index(task_id, count):
-    username = 'bot@e6d54a56-0c25-4264-96f0-743734861368'
-    secret = 'VPeAZs5-bCifonL23rWah~7hNC6nkc8nHQxzguF5NYrZB-02HZNxwjZjqGjbctPZJMFr8JdZF-E5nWuTaA2O4Mdo9sU7xHkw'
+    username = 'login'
+    secret = 'VPeAZso9sU7xHkw'
     auth_url = 'https://api.pyrus.com/v4/auth'
     response = requests.post(auth_url, json={'login': username, 'security_key': secret})
     if response.status_code == 200:
